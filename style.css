@@ -1,3 +1,6 @@
+body{
+    background-color: #0E0303;
+}
 h1{
     font-size: 30px;
 }
@@ -11,4 +14,8 @@ h1{
 }
 .body-bg{
     background-color: #5d6477;
+}
+
+input{
+    font-size: 30px;
 }

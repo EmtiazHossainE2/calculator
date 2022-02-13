@@ -22,35 +22,59 @@
         <div class="container">
             <div class=" mx-auto" style="width: 23rem;">
                 <div class="container">
-                    <div class="row gx-3 mt-3  body-bg">
-                        <input type="text" class="p-4 mb-3 mt-2 rounded shadow" name="" id="">
+                    <div class="row shadow gx-3 mt-3  body-bg">
+                        <input type="text" class="p-4 mb-3 mt-2 rounded shadow" name="" id="display">
                         <div class="col-lg-3 ">
-                            <div class="row"><button type="button" class="btn btn-dark">AC</button></div>
-                            <div class="row"><button type="button" class="btn btn-dark">7</button></div>
-                            <div class="row"><button type="button" class="btn btn-dark">4</button></div>
-                            <div class="row"><button type="button" class="btn btn-dark">1</button></div>
-                            <div class="row"><button type="button" class="btn btn-dark">0</button></div>
+                            <div class="row"><button type="button" onclick="Clear()" class="btn btn-dark">AC</button>
+                            </div>
+                            <div class="row"><button type="button" onclick="display('7')"
+                                    class="btn btn-dark">7</button></div>
+                            <div class="row"><button type="button" onclick="display('4')"
+                                    class="btn btn-dark">4</button></div>
+                            <div class="row"><button type="button" onclick="display('1')"
+                                    class="btn btn-dark">1</button></div>
+                            <div class="row"><button type="button" onclick="display('0')"
+                                    class="btn btn-dark">0</button></div>
                         </div>
                         <div class="col-lg-3">
-                            <div class="row"><button type="button" class="btn btn-dark">DC</button></div>
-                            <div class="row"><button type="button" class="btn btn-dark">8</button></div>
-                            <div class="row"><button type="button" class="btn btn-dark">5</button></div>
-                            <div class="row"><button type="button" class="btn btn-dark">2</button></div>
-                            <div class="row"><button type="button" class="btn btn-dark">00</button></div>
+                            <div class="row"><button type="button" onclick="Delete()" class="btn btn-dark">DC</button>
+                            </div>
+                            <div class="row"><button type="button" onclick="display('8')"
+                                    class="btn btn-dark">8</button></div>
+                            <div class="row"><button type="button" onclick="display('5')"
+                                    class="btn btn-dark">5</button></div>
+                            <div class="row"><button type="button" onclick="display('2')"
+                                    class="btn btn-dark">2</button></div>
+                            <div class="row"><button type="button" onclick="display('00')"
+                                    class="btn btn-dark">00</button></div>
                         </div>
                         <div class="col-lg-3">
-                            <div class="row"><button type="button" class="btn btn-dark">%</button></div>
-                            <div class="row"><button type="button" class="btn btn-dark">9</button></div>
-                            <div class="row"><button type="button" class="btn btn-dark">6</button></div>
-                            <div class="row"><button type="button" class="btn btn-dark">3</button></div>
-                            <div class="row"><button type="button" class="btn btn-dark">.</button></div>
+                            <div class="row"><button type="button" onclick="display('%')"
+                                    class="btn btn-dark">%</button></div>
+                            <div class="row"><button type="button" onclick="display('9')"
+                                    class="btn btn-dark">9</button></div>
+                            <div class="row"><button type="button" onclick="display('6')"
+                                    class="btn btn-dark">6</button></div>
+                            <div class="row"><button type="button" onclick="display('3')"
+                                    class="btn btn-dark">3</button></div>
+                            <div class="row"><button type="button" onclick="display('.')"
+                                    class="btn btn-dark">.</button></div>
                         </div>
                         <div class="col-lg-3">
-                            <div class="row"><button type="button" class="btn btn-dark">÷</button></div>
-                            <div class="row"><button type="button" class="btn btn-dark">X</button></div>
-                            <div class="row"><button type="button" class="btn btn-dark">-</button></div>
-                            <div class="row"><button type="button" class="btn btn-dark">+</button></div>
-                            <div class="row"><button type="button" class="btn btn-dark">=</button></div>
+                            <div class="row"><button type="button" onclick="display('/')"
+                                    class="btn btn-dark">÷</button>
+                            </div>
+                            <div class="row"><button type="button" onclick="display('*')"
+                                    class="btn btn-dark">X</button>
+                            </div>
+                            <div class="row"><button type="button" onclick="display('-')"
+                                    class="btn btn-dark">-</button>
+                            </div>
+                            <div class="row"><button type="button" onclick="display('+')"
+                                    class="btn btn-dark">+</button>
+                            </div>
+                            <div class="row"><button type="button" onclick="calculate()" class="btn btn-dark">=</button>
+                            </div>
                         </div>
                     </div>
                 </div>
